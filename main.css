@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 180px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.titre {
+  color: blanchedalmond;
+  font-size: 40pt;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family: Arial;
+}
+
+li a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  .dropdown{
+    top:-40px;
+    position: absolute;
+    
+  }
+  
+  li.dropdown {
+    display: inline-block;
+
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.duo {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.marcel {
+  height: 900px;
+  width: 70%;
+  background-color: firebrick;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+}
+
+.img {
+  flex-basis: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+img {
+  width: 100%;
+  display: block;
+
+}
+
+.img.active {
+  border: 4px #f1f1f1 solid;
+  
+
+}
+
+.displaytexttop { 
+  background-color:rgb(73, 81, 156);
+  height: 15%;
+  width: 100%;
+  top:-15px;
+  position: absolute;
+  text-align: center;
+  color: #cfdbd0;
+  font-family: impact;
+
+}
+
+.displaytextbottom{
+  background-color: yellow;
+  height: 5%;
+  width: 100%;
+  bottom: 30px;
+  position: absolute;
+  text-align: center;
+  color: brown;
+  font-family: impact;
+  font-style: italic;
+
+}
+
+.josiane {
+  height: 900px;
+  width: 30%;
+  background-color: rgb(99, 30, 30);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.consigne{
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  color: azure;
+  position: absolute;
+}
+
+.button {
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #cfdbd0;
+  transition-duration: 0.4s;
+  width: 78%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+.button:hover {
+  background-color: rgb(37, 53, 14);
+  color: white;
+}
+
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: black;
+  color: blanchedalmond;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+}
